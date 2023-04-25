@@ -1,0 +1,1320 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='comprehensive_mutual_funds_data' inline='true' name='federated.0d6pimk0y1uqwq1fxrhvu022cgd6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='comprehensive_mutual_funds_data' name='textscan.16i3xmx1yuj0vy149g6gr1www19o'>
+            <connection class='textscan' directory='C:/Users/sapna/Downloads' filename='comprehensive_mutual_funds_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.16i3xmx1yuj0vy149g6gr1www19o' name='comprehensive_mutual_funds_data.csv' table='[comprehensive_mutual_funds_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='scheme_name' ordinal='0' />
+            <column datatype='integer' name='min_sip' ordinal='1' />
+            <column datatype='integer' name='min_lumpsum' ordinal='2' />
+            <column datatype='real' name='expense_ratio' ordinal='3' />
+            <column datatype='real' name='fund_size_cr' ordinal='4' />
+            <column datatype='integer' name='fund_age_yr' ordinal='5' />
+            <column datatype='string' name='fund_manager' ordinal='6' />
+            <column datatype='real' name='alpha' ordinal='7' />
+            <column datatype='real' name='sd' ordinal='8' />
+            <column datatype='real' name='beta' ordinal='9' />
+            <column datatype='real' name='sharpe' ordinal='10' />
+            <column datatype='integer' name='risk_level' ordinal='11' />
+            <column datatype='string' name='amc_name' ordinal='12' />
+            <column datatype='integer' name='rating' ordinal='13' />
+            <column datatype='string' name='category' ordinal='14' />
+            <column datatype='string' name='sub_category' ordinal='15' />
+            <column datatype='real' name='returns_1yr' ordinal='16' />
+            <column datatype='real' name='returns_3yr' ordinal='17' />
+            <column datatype='real' name='returns_5yr' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.16i3xmx1yuj0vy149g6gr1www19o' name='comprehensive_mutual_funds_data.csv' table='[comprehensive_mutual_funds_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='scheme_name' ordinal='0' />
+            <column datatype='integer' name='min_sip' ordinal='1' />
+            <column datatype='integer' name='min_lumpsum' ordinal='2' />
+            <column datatype='real' name='expense_ratio' ordinal='3' />
+            <column datatype='real' name='fund_size_cr' ordinal='4' />
+            <column datatype='integer' name='fund_age_yr' ordinal='5' />
+            <column datatype='string' name='fund_manager' ordinal='6' />
+            <column datatype='real' name='alpha' ordinal='7' />
+            <column datatype='real' name='sd' ordinal='8' />
+            <column datatype='real' name='beta' ordinal='9' />
+            <column datatype='real' name='sharpe' ordinal='10' />
+            <column datatype='integer' name='risk_level' ordinal='11' />
+            <column datatype='string' name='amc_name' ordinal='12' />
+            <column datatype='integer' name='rating' ordinal='13' />
+            <column datatype='string' name='category' ordinal='14' />
+            <column datatype='string' name='sub_category' ordinal='15' />
+            <column datatype='real' name='returns_1yr' ordinal='16' />
+            <column datatype='real' name='returns_3yr' ordinal='17' />
+            <column datatype='real' name='returns_5yr' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scheme_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scheme_name]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>scheme_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min_sip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[min_sip]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>min_sip</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min_lumpsum</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[min_lumpsum]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>min_lumpsum</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expense_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expense_ratio]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>expense_ratio</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fund_size_cr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fund_size_cr]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>fund_size_cr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fund_age_yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fund_age_yr]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>fund_age_yr</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fund_manager</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fund_manager]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>fund_manager</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alpha</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alpha]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>alpha</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sd]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>sd</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>beta</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[beta]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>beta</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sharpe</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sharpe]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>sharpe</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>risk_level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[risk_level]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>risk_level</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amc_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[amc_name]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>amc_name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_category]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>sub_category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returns_1yr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returns_1yr]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>returns_1yr</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returns_3yr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returns_3yr]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>returns_3yr</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returns_5yr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returns_5yr]</local-name>
+            <parent-name>[comprehensive_mutual_funds_data.csv]</parent-name>
+            <remote-alias>returns_5yr</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='comprehensive_mutual_funds_data.csv' datatype='table' name='[__tableau_internal_object_id__].[comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3]' role='measure' type='quantitative' />
+      <column caption='Alpha' datatype='real' name='[alpha]' role='measure' type='quantitative' />
+      <column caption='Amc Name' datatype='string' name='[amc_name]' role='dimension' type='nominal' />
+      <column caption='Beta' datatype='real' name='[beta]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Expense Ratio' datatype='real' name='[expense_ratio]' role='measure' type='quantitative' />
+      <column caption='Fund Age Yr' datatype='integer' name='[fund_age_yr]' role='dimension' type='quantitative' />
+      <column caption='Fund Manager' datatype='string' name='[fund_manager]' role='dimension' type='nominal' />
+      <column caption='Fund Size Cr' datatype='real' name='[fund_size_cr]' role='measure' type='quantitative' />
+      <column caption='Min Lumpsum' datatype='integer' name='[min_lumpsum]' role='measure' type='quantitative' />
+      <column caption='Min Sip' datatype='integer' name='[min_sip]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='integer' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Returns 1Yr' datatype='real' name='[returns_1yr]' role='dimension' type='quantitative' />
+      <column caption='Returns 3Yr' datatype='real' name='[returns_3yr]' role='dimension' type='quantitative' />
+      <column caption='Returns 5Yr' datatype='real' name='[returns_5yr]' role='dimension' type='quantitative' />
+      <column caption='Risk Level' datatype='integer' name='[risk_level]' role='measure' type='quantitative' />
+      <column caption='Scheme Name' datatype='string' name='[scheme_name]' role='dimension' type='nominal' />
+      <column caption='Sd' datatype='real' name='[sd]' role='measure' type='quantitative' />
+      <column caption='Sharpe' datatype='real' name='[sharpe]' role='measure' type='quantitative' />
+      <column caption='Sub Category' datatype='string' name='[sub_category]' role='dimension' type='nominal' />
+      <column-instance column='[amc_name]' derivation='None' name='[none:amc_name:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:amc_name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Franklin Templeton Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Quant Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Axis Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LIC Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kotak Mahindra Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Navi Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;ICICI Prudential Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;IDFC Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sundaram Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HSBC Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Quantum Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Baroda BNP Paribas Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nippon India Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;UTI Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Aditya Birla Sun Life Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mahindra Manulife Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SBI Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Union Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Canara Robeco Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;DSP Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;PGIM India Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;IIFL Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tata Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Indiabulls Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Taurus Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ITI Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;JM Financial Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;L&amp;T Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;HDFC Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Motilal Oswal Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Edelweiss Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;PPFAS Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bandhan Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mirae Asset Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Invesco Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Trust Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;IDBI Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Shriram Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bank of India Mutual Fund&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;WhiteOak Capital Mutual Fund&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='comprehensive_mutual_funds_data.csv' id='comprehensive_mutual_funds_data.csv_9513F8C0689F450FB5D41F1D873574F3'>
+            <properties context=''>
+              <relation connection='textscan.16i3xmx1yuj0vy149g6gr1www19o' name='comprehensive_mutual_funds_data.csv' table='[comprehensive_mutual_funds_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='scheme_name' ordinal='0' />
+                  <column datatype='integer' name='min_sip' ordinal='1' />
+                  <column datatype='integer' name='min_lumpsum' ordinal='2' />
+                  <column datatype='real' name='expense_ratio' ordinal='3' />
+                  <column datatype='real' name='fund_size_cr' ordinal='4' />
+                  <column datatype='integer' name='fund_age_yr' ordinal='5' />
+                  <column datatype='string' name='fund_manager' ordinal='6' />
+                  <column datatype='real' name='alpha' ordinal='7' />
+                  <column datatype='real' name='sd' ordinal='8' />
+                  <column datatype='real' name='beta' ordinal='9' />
+                  <column datatype='real' name='sharpe' ordinal='10' />
+                  <column datatype='integer' name='risk_level' ordinal='11' />
+                  <column datatype='string' name='amc_name' ordinal='12' />
+                  <column datatype='integer' name='rating' ordinal='13' />
+                  <column datatype='string' name='category' ordinal='14' />
+                  <column datatype='string' name='sub_category' ordinal='15' />
+                  <column datatype='real' name='returns_1yr' ordinal='16' />
+                  <column datatype='real' name='returns_3yr' ordinal='17' />
+                  <column datatype='real' name='returns_5yr' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0d6pimk0y1uqwq1fxrhvu022cgd6'>
+      <datasources>
+        <datasource caption='comprehensive_mutual_funds_data' name='federated.0d6pimk0y1uqwq1fxrhvu022cgd6' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0d6pimk0y1uqwq1fxrhvu022cgd6'>
+        <column caption='Amc Name' datatype='string' name='[amc_name]' role='dimension' type='nominal' />
+        <column-instance column='[amc_name]' derivation='None' name='[none:amc_name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:amc_name:nk]' member='&quot;Bandhan Mutual Fund&quot;' />
+          <groupfilter function='member' level='[none:amc_name:nk]' member='&quot;HDFC Mutual Fund&quot;' />
+          <groupfilter function='member' level='[none:amc_name:nk]' member='&quot;ICICI Prudential Mutual Fund&quot;' />
+          <groupfilter function='member' level='[none:amc_name:nk]' member='&quot;Motilal Oswal Mutual Fund&quot;' />
+          <groupfilter function='member' level='[none:amc_name:nk]' member='&quot;SBI Mutual Fund&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='expense ratio'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='comprehensive_mutual_funds_data' name='federated.0d6pimk0y1uqwq1fxrhvu022cgd6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d6pimk0y1uqwq1fxrhvu022cgd6'>
+            <column caption='Amc Name' datatype='string' name='[amc_name]' role='dimension' type='nominal' />
+            <column caption='Expense Ratio' datatype='real' name='[expense_ratio]' role='measure' type='quantitative' />
+            <column-instance column='[amc_name]' derivation='None' name='[none:amc_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sub_category]' derivation='None' name='[none:sub_category:nk]' pivot='key' type='nominal' />
+            <column caption='Sub Category' datatype='string' name='[sub_category]' role='dimension' type='nominal' />
+            <column-instance column='[expense_ratio]' derivation='Sum' name='[sum:expense_ratio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:amc_name:nk]' />
+              <groupfilter function='member' level='[none:amc_name:nk]' member='&quot;DSP Mutual Fund&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:sub_category:nk]'>
+            <groupfilter function='level-members' level='[none:sub_category:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:sub_category:nk]</column>
+            <column>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]' value='41' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[sum:expense_ratio:qk]</rows>
+        <cols>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</cols>
+      </table>
+      <simple-id uuid='{0B8B0439-C85B-440E-8366-15E49631131F}' />
+    </worksheet>
+    <worksheet name='fund size'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='comprehensive_mutual_funds_data' name='federated.0d6pimk0y1uqwq1fxrhvu022cgd6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d6pimk0y1uqwq1fxrhvu022cgd6'>
+            <column caption='Amc Name' datatype='string' name='[amc_name]' role='dimension' type='nominal' />
+            <column caption='Fund Size Cr' datatype='real' name='[fund_size_cr]' role='measure' type='quantitative' />
+            <column-instance column='[amc_name]' derivation='None' name='[none:amc_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fund_size_cr]' derivation='Sum' name='[sum:fund_size_cr:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#72b966' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[sum:fund_size_cr:qk]</rows>
+        <cols>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</cols>
+      </table>
+      <simple-id uuid='{6355CAC2-C196-49B8-9937-8CDE4ABF7604}' />
+    </worksheet>
+    <worksheet name='returns'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='comprehensive_mutual_funds_data' name='federated.0d6pimk0y1uqwq1fxrhvu022cgd6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d6pimk0y1uqwq1fxrhvu022cgd6'>
+            <column caption='Amc Name' datatype='string' name='[amc_name]' role='dimension' type='nominal' />
+            <column-instance column='[amc_name]' derivation='None' name='[none:amc_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[returns_5yr]' derivation='None' name='[none:returns_5yr:qk]' pivot='key' type='quantitative' />
+            <column caption='Returns 5Yr' datatype='real' name='[returns_5yr]' role='dimension' type='quantitative' />
+            <column caption='Sharpe' datatype='real' name='[sharpe]' role='measure' type='quantitative' />
+            <column-instance column='[sharpe]' derivation='Sum' name='[sum:sharpe:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:returns_5yr:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[sum:sharpe:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:returns_5yr:qk] + [federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[sum:sharpe:qk])</rows>
+        <cols>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</cols>
+      </table>
+      <simple-id uuid='{9622FFBC-DE13-4F97-B715-1A14D4362A49}' />
+    </worksheet>
+    <worksheet name='risk'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>RISK </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='comprehensive_mutual_funds_data' name='federated.0d6pimk0y1uqwq1fxrhvu022cgd6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d6pimk0y1uqwq1fxrhvu022cgd6'>
+            <column caption='Amc Name' datatype='string' name='[amc_name]' role='dimension' type='nominal' />
+            <column-instance column='[amc_name]' derivation='None' name='[none:amc_name:nk]' pivot='key' type='nominal' />
+            <column caption='Risk Level' datatype='integer' name='[risk_level]' role='measure' type='quantitative' />
+            <column-instance column='[risk_level]' derivation='Sum' name='[sum:risk_level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[sum:risk_level:qk]</rows>
+        <cols>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</cols>
+      </table>
+      <simple-id uuid='{E97E4C2D-43B9-42ED-9C33-743844B40766}' />
+    </worksheet>
+    <worksheet name='sharpe'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='comprehensive_mutual_funds_data' name='federated.0d6pimk0y1uqwq1fxrhvu022cgd6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0d6pimk0y1uqwq1fxrhvu022cgd6'>
+            <column caption='Amc Name' datatype='string' name='[amc_name]' role='dimension' type='nominal' />
+            <column-instance column='[amc_name]' derivation='None' name='[none:amc_name:nk]' pivot='key' type='nominal' />
+            <column caption='Sharpe' datatype='real' name='[sharpe]' role='measure' type='quantitative' />
+            <column-instance column='[sharpe]' derivation='Sum' name='[sum:sharpe:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[sum:sharpe:qk]</rows>
+        <cols>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</cols>
+      </table>
+      <simple-id uuid='{51066955-71D9-44DB-8779-03C7AB49696B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='expense ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[attr:category:nk]</field>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</field>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:category:nk]</field>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:returns_3yr:qk]</field>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:returns_5yr:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1C2AA20D-D4D8-457F-8250-80AF74F70D06}' />
+    </window>
+    <window class='worksheet' name='risk'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]' type='color' />
+            <card param='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</field>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:returns_3yr:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EA1AB97A-23D6-477E-8828-3640D9E1CA6A}' />
+    </window>
+    <window class='worksheet' name='fund size'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{45D4C125-3BA4-41ED-877D-B5DE9A9E8042}' />
+    </window>
+    <window class='worksheet' name='returns'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</field>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:returns_5yr:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9DCD87BC-A3B8-4065-89A4-82E3F1FC7E6F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='sharpe'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0d6pimk0y1uqwq1fxrhvu022cgd6].[none:amc_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{26453B5E-E9A0-4FC9-A1F8-4CFE7A0642E5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='expense ratio' width='192'>
+      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
+      Puzb9FP1/1jFiwypnXs0AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='fund size' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='returns' width='192'>
+      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
+      UDSQsAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='risk' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='sharpe' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
