@@ -1,0 +1,19 @@
+
+.container{
+    padding-left: 100px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border-color: rgba(225, 196, 255, 0.605);
+    align-content: center;
+    border-color: rgb(0, 0, 0);
+}
+.button{
+background-color: #030fed;
+  border: none;
+  color: white;
+  padding-top:2px;
+  border-radius: 5px;
+  height: 25px;
+  size: 10px;
+  cursor: pointer;}
+  
